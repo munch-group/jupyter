@@ -24,7 +24,7 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           cp README.md content
-          jupyter lite build --contents content --output-dir ./jupyterlite --lite-dir jupyterlite
+          jupyter lite build --contents content --output-dir dist --lite-dir jupyterlite
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
